@@ -1,0 +1,16 @@
+// Global
+@import '_variables';
+@import '_mixins';
+@import '_reset';
+@import '_buttons';
+@import '_blocks';
+@import '_icons';
+@import '_hover';
+@import '_select';
+@import '_inputs';
+@import '_tooltip';
+
+// Components
+@import '../components/table/scss/_style';
+@import '../components/pagination/scss/_style';
+

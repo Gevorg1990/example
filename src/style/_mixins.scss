@@ -1,0 +1,44 @@
+@use "sass:math";
+
+//$sizes : 5,10,20,40;
+//
+//$cont : [b bottom,r right,t top,l left];
+//
+//@each $size in $sizes {
+//  .m-#{$size} {
+//    margin: $size + px;
+//  }
+//
+//}
+//
+//@each $con,$pos in $cont {
+//
+//  @each $size in $sizes {
+//    .m-#{$size} {
+//      margin: $size + px;
+//    }
+//    .m#{$con}-#{$size} {
+//      margin-#{$pos}: $size + px;
+//    }
+//
+//  }
+//
+//}
+
+@mixin font-size($size, $end: false, $default: $defaultFontSize) {
+
+  @if $end {
+    @for $i from $size to ($end+1) {
+      .fs#{$i}{
+        font-size: math.div( $i, $default ) + rem;
+      }
+    }
+  } @else {
+    font-size: math.div( $size, $default ) + rem;
+  }
+
+}
+
+@mixin rootFontSize( $default: $defaultFontSize ) {
+  font-size: math.div( $default, 16 ) * 100%;
+}

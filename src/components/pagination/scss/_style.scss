@@ -1,0 +1,29 @@
+.pagination {
+
+  &__item:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  .icon-arrow-right,
+  .icon-arrow-left {
+    color: #A9B5BC;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__link {
+    color: $textColor2;
+    height: 24px;
+    border-radius: 4px;
+    line-height: 24px;
+    width: 24px;
+
+    &--active {
+      background-color: #0060FF;
+      color: white;
+      cursor: default;
+    }
+
+  }
+
+}

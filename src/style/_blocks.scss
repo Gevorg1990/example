@@ -1,0 +1,98 @@
+
+// CUSTOM STYLES
+.wrapper {
+  padding: 60px 0;
+}
+
+.tab {
+  border-bottom: 1px solid $bdColor4;
+  margin-bottom: 25px;
+}
+
+.create-box {
+  margin-bottom: 32px;
+
+  &__link{
+    color: $textColor4;
+    padding-right: 34px;
+
+    &:before {
+      @include font-size(16);
+      color: rgba(0, 0, 0, 0.54);
+    }
+
+  }
+
+}
+
+.show-box {
+  height: 48px;
+}
+
+.filter-box {
+  margin-bottom: 20px;
+
+  .icon-search {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 15px;
+    left: 10px;
+  }
+
+}
+
+.input-filter-box {
+  margin-right: 23px;
+}
+
+.select__wrapper {
+
+  i {
+    right: 13px;
+  }
+
+  &:not(:last-child) {
+    margin-right: 12px;
+  }
+
+}
+
+.show {
+  color: #5E6E78;
+  margin-right: 28px;
+}
+
+.result {
+  color: $textColor2;
+  padding-right: 40px;
+
+  &:before {
+    font-size: 10px;
+  }
+
+}
+
+.button-box button {
+
+  &:first-child {
+    padding: 0 24px 0 60px;
+
+    i {
+      left: 27px;
+    }
+
+  }
+
+  &:nth-child(2){
+    padding: 0 60px 0 20px;
+
+    &:before {
+      @include font-size(24);
+      right: 15px;
+    }
+
+  }
+
+}
+
+
+
